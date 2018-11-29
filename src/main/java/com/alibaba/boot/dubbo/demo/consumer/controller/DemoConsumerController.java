@@ -18,7 +18,7 @@ package com.alibaba.boot.dubbo.demo.consumer.controller;
 
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.deepexi.api.ProductService;
+import com.deepexi.service.ProductService;
 import com.deepexi.util.config.Payload;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
