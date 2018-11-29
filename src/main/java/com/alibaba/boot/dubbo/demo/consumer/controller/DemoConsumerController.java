@@ -36,9 +36,9 @@ public class DemoConsumerController {
     @Reference(version = "${demo.service.version}")
     private ProductService productService;
 
-    @RequestMapping("/sayHello")
-    public Payload sayHello(@RequestParam String name) {
-        return new Payload(productService.getProductById(name));
+    @RequestMapping("/getById")
+    public Payload sayHello(@RequestParam String id) {
+        return new Payload(productService.getProductById(id));
     }
 
 }
