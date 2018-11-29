@@ -37,7 +37,7 @@ public class DemoConsumerController {
     private ProductService productService;
 
     @RequestMapping("/getById")
-    public Payload sayHello(@RequestParam String id) {
+    public Payload getById(@RequestParam String id) {
         return new Payload(productService.getProductById(id));
     }
 
